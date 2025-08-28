@@ -14,7 +14,7 @@
         input[type="text"]{ flex: 1 1 220px; padding: 12px 14px; border-radius: 12px; border: 1px solid #2b3766; background: #0e1530; color: #e9eef9; outline: none; font-size: 1rem; }
         button { padding: 12px 16px; border: 0; border-radius: 12px; background: #5b7cff; color: white; font-weight: 600; cursor: pointer; }
         button:active { transform: translateY(1px); }
-        .result { margin-top: 8px; padding: 14px; border-radius: 12px; background: #0e1530; border: 1px solid #2b3766; min-height: 48px; display: flex; align-items: center; }
+        .result { margin-top: 8px; padding: 14px; border-Gradius: 12px; background: #0e1530; border: 1px solid #2b3766; min-height: 48px; display: flex; align-items: center; }
         .hint { font-size: .9rem; color: #9db0ff; margin-top: 10px; }
     </style>
 </head>
@@ -35,32 +35,32 @@
     <script>
        const FRASES = {
 
-          'a': "a veces me pregunto q hubiera pasado si no te hubiera conocido, me perdia de enchuchi",
-          'b': "bailaria con vos toda la noche, si no hay GATITAS",
-          'c': "como me gusta tu sonrisa",
-          'd': "deja de joder con lanus",
-          'e': "espero que estes bien, posta",
-          'f': "feliz de tenerte en mi vida",
-          'g': "gracias por todo lo que haces por mi, aunq te odio a veces jm",
-          'h': "hola, como estas?, cuando nos vemos?",
-          'i': "imagino un futuro juntos",
-          'j': "jamas pense que podria sentir esto por alguien",
-          'k': "kiero estar siempre a tu ladoo jjiji",
-          'l': "la vida es mejor con vos, aunque te odie a veces",    
-          'm': "me haces muy feliz",
-          'n': "nunca dejes de sonreir chenchuchi",
-          'o': "ojala pudiera verte ahora mismo",
-          'p': "pensando en vos todo el dia",
-          'q': "quiero que sepas que te amo",
-          'r': "recordando nuestro primer beso",
-          's': "sos lo mejor que me paso",
-          't': "te extraño mucho cuando no estas",
-          'u': "un dia sin vos es un dia perdido",
-          'v': "vos sos mi persona favorita",
-          'w': "why not be happy together?",
-          'x': "xq no estas aca conmigo?",
-          'y': "y pensar que casi no te hablo ese dia",
-          'z': "zarpado lo nuestro, no?"  
+            "a": "a veces me pregunto cómo seria mi vida sin vos, seguro más tranquila jaja",
+            "b": "bailamos como locas aunque nadie nos mire",
+            "c": "como me haces reír con cada boludez",
+            "d": "dejá de robarme la ropaaaa",
+            "e": "espero que siempre estemos juntas, aunque peleemos",
+            "f": "feliz de tenerte como mi hermana (aunque me saques)",
+            "g": "gracias por bancarme en todas",
+            "h": "hermanita querida, sos insoportable pero te amo",
+            "i": "igual siempre terminamos arreglándonos después de discutir",
+            "j": "juntas somos dinamita",
+            "k": "kiero que sepas que siempre voy a estar para vos",
+            "l": "la vida sería aburrida sin tus quilombos",
+            "m": "me bancás hasta cuando estoy insoportable",
+            "n": "nunca voy a cambiarte por nadie",
+            "o": "ojalá siempre sigamos compartiendo secretos",
+            "p": "peleamos pero a los 5 minutos estamos riéndonos",
+            "q": "quién más me va a decir las cosas de frente si no sos vos",
+            "r": "reímos hasta que nos duele la panza",
+            "s": "sos mi compañera de vida",
+            "t": "te banco aunque me hagas enojar",
+            "u": "una hermana como vos no se consigue fácil",
+            "v": "vos sos mi cable a tierra (y a veces mi tormenta)",
+            "w": "we fight, we laugh, we love (sis style)",
+            "x": "xq siempre me copias??? jaja",
+            "y": "y pensar que solo vos me entendés con una mirada",
+            "z": "zarpadas las aventuras que vivimos juntas"  
         };
 
         function normalizarLetra(str){
@@ -70,7 +70,7 @@
             if (min === "ñ") return "ñ";
 
             const sinAcento = min.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-
+            return sinAcento; 
         }
 
         function mostrarFrasePara(letraCruda) {
